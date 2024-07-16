@@ -20,6 +20,7 @@ def login_view(request):
                 return redirect("/")
     return render(request, "auth/login.html", {})
 
+
 def register_view(request):
     if request.method == "POST":
         # print(request.POST)
